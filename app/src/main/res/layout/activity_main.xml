@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="188dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Amount"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangleborderlessgrey"
+        android:ems="14"
+        android:gravity="center"
+        android:hint="50 e.g."
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvPax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Pax"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etPax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:background="@drawable/rectangleborderlessgrey"
+        android:ems="14"
+        android:gravity="center"
+        android:hint="5 e.g."
+        android:inputType="numberSigned" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        >
+
+        <ToggleButton
+            android:id="@+id/tbSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textOff="NO SVS"
+            android:textOn="SVS" />
+
+        <ToggleButton
+            android:id="@+id/tbGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:textOff="NO GST"
+            android:textOn="GST" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Discount(%)"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rectangleborderlessgrey"
+        android:ems="14"
+        android:gravity="center"
+        android:hint="10 e.g."
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rgPayMethod">
+
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:checked="true"
+                android:layout_marginEnd="40dp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbPaynow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paynow"
+                android:textColor="@color/black"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPLIT"
+        android:background="@drawable/rectangleborderlessorange"
+        android:layout_gravity="center"
+        android:layout_margin="14dp"/>
+
+    <TextView
+        android:id="@+id/tvReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset?"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+
+</LinearLayout>
