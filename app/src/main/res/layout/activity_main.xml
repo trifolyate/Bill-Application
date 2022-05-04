@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="188dp"
-        android:layout_height="107dp"
+        android:layout_width="222dp"
+        android:layout_height="133dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/img" />
 
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Amount"
+        android:text="Amount($)"
         android:layout_margin="10dp"
         android:textColor="@color/black"/>
 
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="Pax"
+        android:text="Pax(Number of People)"
         android:textColor="@color/black"/>
 
     <EditText
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
         >
 
         <ToggleButton
@@ -72,7 +72,7 @@
             android:checked="false"
             android:textColor="#FFFFFF"
             android:textOff="NO SVS"
-            android:textOn="SVS" />
+            android:textOn="SVS(10%)" />
 
         <ToggleButton
             android:id="@+id/tbGST"
@@ -81,9 +81,18 @@
             android:checked="true"
             android:textColor="#FFFFFF"
             android:textOff="NO GST"
-            android:textOn="GST" />
+            android:textOn="GST(7%)" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add on Service Charge(10%) and GST(7%) by enabling the respective button"
+        android:layout_marginBottom="15dp"
+        android:textSize="8dp"
+        android:textColor="@color/grey"/>
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -164,7 +173,7 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:textSize="25dp"/>
+        android:textSize="20dp" />
 
 
 </LinearLayout>
